@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+<title>Шторка</title>
+</head>
+<style>
+    li {
+        margin-left: -15px;
+    }
+    input {
+        height: 85%;
+        width: 97%;
+    }
+
+</style>
+
+<body>
+<div id="zz" style="height: 40px; width: 100%; border: 1px solid darkblue;">
+    <button onclick="openz ()" style="margin-left: 15px; margin-top: 10px">&#8801</button>
+    <font style="margin-top: 10px; margin-left: 40%">ЛОГОТИП</font>
+    <font style="margin-left: 5%" onclick="open5 ()">&#128269</font>
+</div>
+
+<div id="xx" style="height: 40px; width: calc(100% - 2px); border: 1px solid darkblue; left: 0; top:8px; position: absolute; background: white">
+    <input type="text" id="poisk" style="width: 60%; ">
+    <button style="position: absolute;" onclick="clear1 ()" id="p"><font size="5.5">&times</font></button>
+
+
+</div>
+    <div id="menu1" style=" border: solid black 1px; width: 114px;height: auto;">
+    <ul>
+        <li style="border-bottom: solid black 0.5px;" onclick="open1()">ТЕКСТ 1</li>
+        <div id="1"  style=" border: solid black 1px; width: 20px;height: 30px;"> </div>
+        <li style="border-bottom: solid black 0.5px;" onclick="open2()">ТЕКСТ 2</li>
+        <div id="2"  style=" border: solid black 1px; width: 20px;height: 30px;"></div>
+        <li style="border-bottom: solid black 0.5px;" onclick="open3()">ТЕКСТ 3</li>
+        <div id="3"  style=" border: solid black 1px; width: 20px;height: 30px;"></div>
+        <li style="border-bottom: solid black 0.5px;" onclick="open4()">ТЕКСТ 4</li>
+        <div id="4"  style=" border: solid black 1px; width: 20px;height: 30px;"></div>
+    </ul>
+    </div>
+
+
+
+
+
+
+</body>
+<script>
+    z = 0;
+    i = true;
+    function openz () {
+        i = !i;
+        if (i == true){
+            document.getElementById('menu1').style.display = 'block';
+
+        }
+
+        if (i == false) {
+            document.getElementById('menu1').style.display = 'none';
+        }
+
+       }
+    function open1() {
+        i = !i;
+         if (i == false) {
+            document.getElementById('1').style.display = 'none';
+        }
+        if (i == true){
+            document.getElementById('1').style.display = 'block';
+
+        }
+
+
+    }
+    function open2() {
+        i = !i;
+         if (i == false) {
+            document.getElementById('2').style.display = 'none';
+        }
+        if (i == true){
+            document.getElementById('2').style.display = 'block';
+
+
+        }
+
+
+    }
+    function open3() {
+        i = !i;
+         if (i == false) {
+            document.getElementById('3').style.display = 'none';
+        }
+        if (i == true){
+            document.getElementById('3').style.display = 'block';
+
+        }
+
+
+    }
+    function open4() {
+        i = !i;
+         if (i == false) {
+            document.getElementById('4').style.display = 'none';
+        }
+        if (i == true){
+            document.getElementById('4').style.display = 'block';
+
+        }
+
+
+    }
+    function open5() {
+        i = !i;
+         if (i == false) {
+            document.getElementById('xx').style.display = 'none';
+        }
+        if (i == true){
+            document.getElementById('xx').style.display = 'block';
+
+        }
+
+
+    }
+    function clear1() {
+        i = false;
+        document.getElementById('poisk').innerHTML = '';
+        document.getElementById('xx').style.display = 'none';
+
+
+    }
+
+
+
+</script>
+</html>
